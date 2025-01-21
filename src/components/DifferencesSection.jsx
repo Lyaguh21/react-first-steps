@@ -3,7 +3,7 @@ import { differences } from "../data";
 import Button from "./Button/Button";
 
 export default function DifferencesSection() {
-  const [content, setContent] = useState("Нажми на кнопку");
+  const [content, setContent] = useState("Нажми на кнопки сверху");
   function handleClick(type) {
     setContent(differences[type]);
   }

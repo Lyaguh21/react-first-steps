@@ -1,0 +1,33 @@
+.selectColor {
+  height: 200px;
+  width: 200px;
+  background-color: #fdf5e6;
+  display: inline-block;
+  text-align: center;
+}
+.selectColor p {
+  font-size: medium;
+  margin-top: 80px;
+}
+
+.button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  transition: 0.08s ease-in-out;
+  background: #3e6ae1;
+  color: #fff;
+}
