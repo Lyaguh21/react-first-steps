@@ -8,7 +8,13 @@ export default function DifferencesSection() {
     setContent(differences[type]);
   }
   return (
-    <section>
+    <section
+      style={{
+        backgroundColor: "#8d8c89",
+        height: "175px",
+        marginBottom: "20px",
+      }}
+    >
       <h3 className="centered">Наши преимущества</h3>
       <div className="centered" style={{ marginTop: "20px" }}>
         <Button
