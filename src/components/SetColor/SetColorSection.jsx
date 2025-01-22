@@ -5,7 +5,6 @@ import { colors } from "../../data";
 
 export default function SetColor() {
   // возвращает рандомное число дон
-
   function getRandomInt() {
     let min = 0,
       max = colors.length - 1;

@@ -1,0 +1,13 @@
+header {
+  height: 50px;
+  padding: 0 2rem;
+  padding-top: 0.8rem;
+  border-bottom: 1px solid #ccc;
+  background: #fafafa;
+}
+.headerChildren {
+  display: flex;
+  justify-content: space-between;
+  max-width: 810px;
+  margin: 0 auto;
+}
