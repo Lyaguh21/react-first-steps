@@ -7,7 +7,10 @@
   font-weight: bold;
   margin-right: 1rem;
 }
-
+.button:disabled {
+  background-color: rgb(85, 85, 85);
+  cursor: not-allowed;
+}
 .button:hover {
   opacity: 0.8;
 }

@@ -10,13 +10,14 @@ export default function DifferencesSection() {
   return (
     <section
       style={{
+        paddingTop: "20px",
         backgroundColor: "#8d8c89",
         height: "175px",
         marginBottom: "20px",
       }}
     >
-      <h3 className="centered">Наши преимущества</h3>
-      <div className="centered" style={{ marginTop: "20px" }}>
+      <h3 className="centered">Ниже тест всяких приколюх</h3>
+      <div className="centered" style={{ marginTop: "10px" }}>
         <Button
           className="buttonDifferences"
           isActive={content == differences.way}
@@ -33,7 +34,6 @@ export default function DifferencesSection() {
         </Button>
         <Button
           className="buttonDifferences"
-          sty
           isActive={content == differences.program}
           onClick={() => handleClick("program")}
         >
