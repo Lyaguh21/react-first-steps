@@ -1,4 +1,4 @@
-import "./SetColor.css";
+import "./SetColor.scss";
 export default function SetColorButton({ children, onClick }) {
   return (
     <div style={{ textAlign: "center" }}>

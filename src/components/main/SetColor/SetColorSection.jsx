@@ -1,6 +1,6 @@
-import "./SetColor.css";
+import "./SetColor.scss";
 import { useState } from "react";
-import SetColorButton from "./setColorButton";
+import SetColorButton from "./SetColorButton";
 import { colors } from "./../../../data";
 
 export default function SetColor() {
