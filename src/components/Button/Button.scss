@@ -1,3 +1,4 @@
+$disabledButtonColor: rgb(171, 171, 171);
 .button {
   padding: 0.8rem 2rem;
   border: none;
@@ -6,10 +7,10 @@
   transition: all 0.3s;
   font-weight: bold;
   margin-right: 1rem;
-  width: 170px;
 }
 .button:disabled {
-  background-color: rgb(85, 85, 85);
+  background-color: $disabledButtonColor;
+  color: #000;
   cursor: not-allowed;
 }
 .button:hover {

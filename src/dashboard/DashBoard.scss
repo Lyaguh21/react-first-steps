@@ -1,0 +1,16 @@
+$main-font: "Roboto", sans-serif;
+
+.MainTitleBoard {
+  font-family: $main-font;
+  text-align: center;
+}
+#lsideForm {
+  display: inline;
+  float: left;
+  width: 40%;
+}
+#rsideReminders {
+  display: inline;
+  float: right;
+  width: 60%;
+}

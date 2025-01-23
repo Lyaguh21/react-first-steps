@@ -1,0 +1,16 @@
+$deskСolor: linear-gradient(to top, #604a3c, #9d724f);
+
+#remindersTable {
+  background: $deskСolor;
+  padding: 4px 4px 4px 4px;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  border-collapse: separate;
+  border-spacing: 15px 15px;
+  td {
+    width: 210px;
+    height: 210px;
+    background-color: aqua;
+    margin-right: 5px;
+  }
+}

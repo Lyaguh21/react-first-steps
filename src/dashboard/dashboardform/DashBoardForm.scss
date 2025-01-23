@@ -1,0 +1,21 @@
+$main-font: "Roboto", sans-serif;
+$deskСolor: linear-gradient(to top, #604a3c, #9d724f);
+.control {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#remindersForm {
+  background: $deskСolor;
+  margin-top: 3rem;
+  padding: 2rem 2rem 2rem 2rem;
+  label {
+    font-family: $main-font;
+  }
+}
+#setOnDesk {
+  justify-content: center;
+}
