@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { differences } from "../data";
-import Button from "./Button/Button";
+import { differences } from "../../data";
+import Button from "../Button/Button";
 
 export default function DifferencesSection() {
   const [content, setContent] = useState("Нажми на кнопки сверху");

@@ -1,7 +1,7 @@
 import "./SetColor.css";
 import { useState } from "react";
 import SetColorButton from "./setColorButton";
-import { colors } from "../../data";
+import { colors } from "./../../../data";
 
 export default function SetColor() {
   // возвращает рандомное число дон

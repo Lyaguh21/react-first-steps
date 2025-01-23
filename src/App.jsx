@@ -1,11 +1,12 @@
 import Header from "./components/Header/Header";
-import TeachingSection from "./components/TeachingSection";
-import DifferencesSection from "./components/DifferencesSection";
+import TeachingSection from "./components/main/TeachingSection";
+import DifferencesSection from "./components/main/DifferencesSection";
 import IntroSection from "./components/IntroSection";
-import SetColor from "./components/SetColor/SetColorSection";
+import SetColor from "./components/main/SetColor/SetColorSection";
 import TabsSection from "./components/TabsSection";
-import FeedbackSectionS from "./components/FeedbackSection";
+import FeedbackSectionS from "./components/feedback/FeedbackSection";
 import { useState } from "react";
+import EffectSection from "./components/effect/EffectSection";
 
 export default function App() {
   const [tab, setTab] = useState("main");
@@ -28,6 +29,12 @@ export default function App() {
         {tab == "feedback" && (
           <>
             <FeedbackSectionS />
+          </>
+        )}
+
+        {tab == "effect" && (
+          <>
+            <EffectSection />
           </>
         )}
       </main>

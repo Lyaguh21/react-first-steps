@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { styled } from "styled-components";
 import logo from "/logo-name.svg";
 import "./Header.css";
@@ -12,11 +12,15 @@ const HeaderContainer = styled.header`
 `;
 export default function Header() {
   const [now, setNow] = useState(new Date());
-  setInterval(() => setNow(new Date()), 1000);
+  useEffect(() => {
+    const interval = setInterval(() => setNow(new Date()), 1000);
+    return clearInterval(interval);
+  }, []);
+
   return (
     <HeaderContainer>
       <div className="headerChildren">
-        <img src={logo}></img>
+        <h1>NAME OF COMPANY</h1>
 
         <h3 className="timer">Время: {now.toLocaleTimeString()}</h3>
       </div>
