@@ -6,15 +6,19 @@ import "./Header.css";
 const HeaderContainer = styled.header`
   height: 50px;
   padding: 0 2rem;
-  padding-top: 0.8rem;
+  padding-top: 0.4rem;
   border-bottom: 1px solid #ccc;
   background: #fafafa;
 `;
 export default function Header() {
   const [now, setNow] = useState(new Date());
+
   useEffect(() => {
     const interval = setInterval(() => setNow(new Date()), 1000);
-    return clearInterval(interval);
+
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   return (

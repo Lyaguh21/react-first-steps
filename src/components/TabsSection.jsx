@@ -16,6 +16,13 @@ export default function TabsSection({ active, onChange }) {
       <Button isActive={active == "effect"} onClick={() => onChange("effect")}>
         Эффект
       </Button>
+
+      <Button
+        isActive={active == "dashboard"}
+        onClick={() => onChange("dashboard")}
+      >
+        Напоминания
+      </Button>
     </section>
   );
 }

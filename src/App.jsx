@@ -7,6 +7,7 @@ import TabsSection from "./components/TabsSection";
 import FeedbackSectionS from "./components/feedback/FeedbackSection";
 import { useState } from "react";
 import EffectSection from "./components/effect/EffectSection";
+import DashBoardSection from "./dashboard/DashBoardSection";
 
 export default function App() {
   const [tab, setTab] = useState("main");
@@ -35,6 +36,12 @@ export default function App() {
         {tab == "effect" && (
           <>
             <EffectSection />
+          </>
+        )}
+
+        {tab == "dashboard" && (
+          <>
+            <DashBoardSection />
           </>
         )}
       </main>
