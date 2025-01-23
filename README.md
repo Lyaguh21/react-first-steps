@@ -1,6 +1,3 @@
-# React
+# React + SASS
 
-the first web interface for react
-
-<!-- - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh -->
+## the first web interface for react and SASS, it doesn't make sense, but is made for feature tests and getting used to react syntax.
