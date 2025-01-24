@@ -7,7 +7,6 @@ export default function DashBoardForm() {
     descriptionReminders: "",
     hasErorSetTitle: false,
   });
-
   function handleTitleRemindersChange(event) {
     setFormReminders((prev) => ({
       ...prev,
@@ -48,7 +47,6 @@ export default function DashBoardForm() {
             }))
           }
         />
-
         <Button
           id="setOnDesk"
           disabled={

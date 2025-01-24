@@ -1,6 +1,6 @@
 import RemindersSection from "../reminders/RemindersSection";
 import "./DashBoardReminders.scss";
-import { remindersColor } from "../../data";
+
 export default function DashBoardReminders() {
   return (
     <section>
@@ -9,7 +9,8 @@ export default function DashBoardReminders() {
           <tr>
             <td>
               <RemindersSection
-              
+                mainText={"dede"}
+                subText={"ded"}
               ></RemindersSection>
             </td>
             <td>
