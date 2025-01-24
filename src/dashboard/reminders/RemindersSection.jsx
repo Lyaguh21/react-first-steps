@@ -1,4 +1,4 @@
-import "./RemindersSection.scss"; 
+import "./RemindersSection.scss";
 import RemindersButton from "./RemindersButton";
 export default function RemindersSection({ mainText, subText, ...props }) {
   return (

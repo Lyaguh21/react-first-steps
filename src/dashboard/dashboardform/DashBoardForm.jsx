@@ -6,8 +6,8 @@ export default function DashBoardForm({ onSubmit }) {
   const [title, setTitle] = useState("");
   const [subtitle, setSubtitle] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  const handleClick = (event) => {
+    event.preventDefault(); // Предотвращаем стандартное поведение кнопки
     if (onSubmit) {
       onSubmit({ title, subtitle });
       setTitle("");
@@ -19,7 +19,7 @@ export default function DashBoardForm({ onSubmit }) {
 
   return (
     <section>
-      <form action="" id="remindersForm" onSubmit={handleSubmit}>
+      <form id="remindersForm">
         <label htmlFor="titleReminders" className="label">
           Введите заголовок
         </label>
@@ -41,7 +41,7 @@ export default function DashBoardForm({ onSubmit }) {
           onChange={(e) => setSubtitle(e.target.value)}
           required
         />
-        <Button id="setOnDesk" type="submit">
+        <Button id="setOnDesk" type="submit" onClick={handleClick}>
           Разместить на доске
         </Button>
       </form>

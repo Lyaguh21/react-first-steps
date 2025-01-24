@@ -1,7 +1,14 @@
 import RemindersSection from "../reminders/RemindersSection";
 import "./DashBoardReminders.scss";
 
-export default function DashBoardReminders({ cell1, cell2 }) {
+export default function DashBoardReminders({
+  cell1,
+  cell2,
+  cell3,
+  cell4,
+  cell5,
+  cell6,
+}) {
   return (
     <section>
       <table id="remindersTable">
@@ -24,18 +31,30 @@ export default function DashBoardReminders({ cell1, cell2 }) {
           </tr>
           <tr>
             <td>
-              <RemindersSection></RemindersSection>
+              <RemindersSection
+                mainText={cell3?.title}
+                subText={cell3?.subtitle}
+              ></RemindersSection>
             </td>
             <td>
-              <RemindersSection></RemindersSection>
+              <RemindersSection
+                mainText={cell4?.title}
+                subText={cell4?.subtitle}
+              ></RemindersSection>
             </td>
           </tr>
           <tr>
             <td>
-              <RemindersSection></RemindersSection>
+              <RemindersSection
+                mainText={cell5?.title}
+                subText={cell5?.subtitle}
+              ></RemindersSection>
             </td>
             <td>
-              <RemindersSection></RemindersSection>
+              <RemindersSection
+                mainText={cell6?.title}
+                subText={cell6?.subtitle}
+              ></RemindersSection>
             </td>
           </tr>
         </tbody>
