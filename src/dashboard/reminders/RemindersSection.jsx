@@ -1,6 +1,4 @@
-import "./RemindersSection.scss";
-import { remindersColor } from "../../data";
-import Button from "../../components/Button/Button";
+import "./RemindersSection.scss"; 
 import RemindersButton from "./RemindersButton";
 export default function RemindersSection({ mainText, subText, ...props }) {
   return (
