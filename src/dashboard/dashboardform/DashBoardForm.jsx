@@ -25,6 +25,7 @@ export default function DashBoardForm({ onSubmit }) {
         </label>
         <input
           className="control"
+          maxlength="32"
           type="text"
           id="title"
           value={title}
@@ -35,6 +36,7 @@ export default function DashBoardForm({ onSubmit }) {
         <label htmlFor="descriptionReminders">Введите подзаголовок</label>
         <input
           className="control"
+          maxlength="50"
           type="text"
           id="subtitle"
           value={subtitle}

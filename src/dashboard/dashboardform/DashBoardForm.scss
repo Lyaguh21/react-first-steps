@@ -19,11 +19,14 @@ $deskСolor: linear-gradient(to top, #604a3c, #9d724f);
   margin-top: 3rem;
   padding: 2rem 2rem 2rem 2rem;
   label {
-    font-family: $main-font;
+    font-family: $remindersfont;
+    font-size: 20px;
+    font-weight: bold;
   }
 }
 #setOnDesk {
   justify-content: center;
+  margin-left: 30px;
 }
 .label {
   font-family: $remindersfont;

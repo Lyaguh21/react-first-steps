@@ -7,15 +7,16 @@ $remindersfont: "M PLUS Rounded 1c", serif;
 #remindersBox {
   height: 210px;
   width: 210px;
-  background-color: chocolate;
+
   h1 {
     margin: 0.8rem 1rem 0.8rem 1rem;
+    word-break: break-all;
   }
   h5 {
     margin: 0rem 1rem 0.8rem 1rem;
+    word-break: break-all;  
   }
   .box {
-    background-color: rgb(168, 84, 24);
     height: 30px;
     width: 100%;
   }
