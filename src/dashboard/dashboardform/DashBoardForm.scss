@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+$remindersfont: "M PLUS Rounded 1c", serif;
 $main-font: "Roboto", sans-serif;
 $deskСolor: linear-gradient(to top, #604a3c, #9d724f);
+* {
+  font-family: $remindersfont;
+}
 .control {
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -9,6 +14,7 @@ $deskСolor: linear-gradient(to top, #604a3c, #9d724f);
 }
 
 #remindersForm {
+  border: 3px black solid;
   background: $deskСolor;
   margin-top: 3rem;
   padding: 2rem 2rem 2rem 2rem;
@@ -18,4 +24,7 @@ $deskСolor: linear-gradient(to top, #604a3c, #9d724f);
 }
 #setOnDesk {
   justify-content: center;
+}
+.label {
+  font-family: $remindersfont;
 }

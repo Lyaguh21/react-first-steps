@@ -7,10 +7,10 @@ $deskСolor: linear-gradient(to top, #604a3c, #9d724f);
   margin-left: 1rem;
   border-collapse: separate;
   border-spacing: 15px 15px;
+  border: 3px black solid;
   td {
     width: 210px;
     height: 210px;
-    background-color: aqua;
     margin-right: 5px;
   }
 }

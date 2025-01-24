@@ -50,3 +50,12 @@ export const colors = [
   { color: "#A3E4D7", title: "Мятный" },
   { color: "#E6B0AA", title: "Розовый" },
 ];
+
+export const remindersColor = [
+  { main: " chocolate", box: " rgb(168, 84, 24)" },
+  { main: " #8fea7a", box: " #7ed321" },
+  { main: " #2172D2", box: " #185499" },
+  { main: " #F8E71C", box: " #9E9305" },
+  { main: " #E5021E", box: "#7A0210" },
+  { main: " #DEF5C7", box: "#A6E367" },
+];

@@ -1,20 +1,36 @@
+import RemindersSection from "../reminders/RemindersSection";
 import "./DashBoardReminders.scss";
+import { remindersColor } from "../../data";
 export default function DashBoardReminders() {
   return (
     <section>
       <table id="remindersTable">
         <tbody>
           <tr>
-            <td>1</td>
-            <td>2</td>
+            <td>
+              <RemindersSection
+              
+              ></RemindersSection>
+            </td>
+            <td>
+              <RemindersSection></RemindersSection>
+            </td>
           </tr>
           <tr>
-            <td>3</td>
-            <td>4</td>
+            <td>
+              <RemindersSection></RemindersSection>
+            </td>
+            <td>
+              <RemindersSection></RemindersSection>
+            </td>
           </tr>
           <tr>
-            <td>5</td>
-            <td>6</td>
+            <td>
+              <RemindersSection></RemindersSection>
+            </td>
+            <td>
+              <RemindersSection></RemindersSection>
+            </td>
           </tr>
         </tbody>
       </table>

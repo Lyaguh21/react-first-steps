@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
+$remindersfont: "M PLUS Rounded 1c", serif;
+
+* {
+  font-family: $remindersfont;
+}
+#remindersBox {
+  height: 210px;
+  width: 210px;
+  background-color: chocolate;
+  h1 {
+    margin: 0.8rem 1rem 0.8rem 1rem;
+  }
+  h5 {
+    margin: 0rem 1rem 0.8rem 1rem;
+  }
+  .box {
+    background-color: rgb(168, 84, 24);
+    height: 30px;
+    width: 100%;
+  }
+  .heightReminders {
+    height: 170px;
+  }
+}
+.deleteSection {
+  text-align: center;
+  height: 40px;
+  padding-top: 0.5rem;
+}
+.deleteReminders {
+  font-size: 14px;
+  border: none;
+  background-color: rgba(245, 245, 220, 0);
+  padding: 0.2rem 1rem;
+
+  &:hover {
+    color: rgb(63, 62, 62);
+  }
+  &:active {
+    color: black;
+  }
+}

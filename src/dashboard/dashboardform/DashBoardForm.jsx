@@ -18,7 +18,9 @@ export default function DashBoardForm() {
   return (
     <section>
       <form action="" id="remindersForm">
-        <label htmlFor="titleReminders">Введите заголовок</label>
+        <label htmlFor="titleReminders" className="label">
+          Введите заголовок
+        </label>
         <input
           className="control"
           id="titleReminders"
@@ -28,6 +30,9 @@ export default function DashBoardForm() {
           style={{
             border: formReminders.hasErorSetTitle ? "1.7px solid red" : null,
           }}
+          placeholder={
+            formReminders.hasErorSetTitle ? "Обязательное поле" : null
+          }
         />
 
         <label htmlFor="descriptionReminders">Введите подзаголовок</label>
