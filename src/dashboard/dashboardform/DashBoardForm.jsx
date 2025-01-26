@@ -3,8 +3,8 @@ import Button from "../../components/Button/Button";
 import "./DashBoardForm.scss";
 
 export default function DashBoardForm({ onSubmit }) {
-  const [title, setTitle] = useState("");
-  const [subtitle, setSubtitle] = useState("");
+  const [title, setTitle] = useState("Заметка");
+  const [subtitle, setSubtitle] = useState("Подпись у заметки");
 
   const handleClick = (event) => {
     event.preventDefault(); // Предотвращаем стандартное поведение кнопки

@@ -5,7 +5,7 @@ import "./Header.scss";
 const HeaderContainer = styled.header`
   height: 50px;
   padding: 0 2rem;
-  padding-top: 0.4rem;
+  padding-top: 0rem;
   border-bottom: 1px solid #ccc;
   background: #fafafa;
 `;

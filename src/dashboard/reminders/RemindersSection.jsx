@@ -16,7 +16,8 @@ export default function RemindersSection({
       id="remindersBox"
       style={{
         backgroundColor: mainColor,
-        display: (mainText || subText) && isVisible ? "block" : "none",
+        opacity: (mainText || subText) && isVisible ? 1 : 0,
+        transition: "opacity 0.25s ease-in-out",
       }}
       {...props}
     >
