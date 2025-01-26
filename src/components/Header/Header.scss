@@ -13,12 +13,12 @@ header {
 }
 
 .switchbutton {
-  color: $fontWhiteColor;
+  color: $fontColorLight;
   cursor: pointer;
   transition: all 0.3s;
   font-weight: bold;
   font-size: 12px;
-  background-color: $mainColorSwitchButton;
+  background-color: $mainColorSwitchButtonLight;
   padding: 0px 1px 0px 1px;
   height: 45.58px;
   width: 45.58px;
@@ -26,9 +26,9 @@ header {
   border-radius: 5px;
 
   &:hover {
-    background-color: $hoverColorSwitchButton;
+    background-color: $hoverColorSwitchButtonLight;
   }
   &:active {
-    background-color: $mainColorSwitchButton;
+    background-color: $mainColorSwitchButtonLight;
   }
 }

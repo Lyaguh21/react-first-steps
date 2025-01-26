@@ -1,7 +1,7 @@
 import "../Header/Header.scss";
-export default function SwitchThemeButton({ switchTheme }) {
+export default function SwitchThemeButton({ onClick, ...props }) {
   return (
-    <button type="button" className="switchbutton" onClick={switchTheme}>
+    <button {...props} type="button" className="switchbutton" onClick={onClick}>
       Switch
     </button>
   );

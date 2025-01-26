@@ -1,6 +1,6 @@
 @import "./colorAndFont";
 body {
-  background-color: $backgroundLightTheme;
+  background-color: $backgroundThemeLight;
 }
 * {
   margin: 0;
@@ -14,7 +14,7 @@ main {
   max-width: 850px;
   margin: 0 auto;
   padding: 0rem 1rem 0 1rem;
-  background-color: $backgroundLightTheme;
+  background-color: $backgroundThemeLight;
 }
 section {
   ul {
