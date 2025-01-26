@@ -1,6 +1,7 @@
 import "./RemindersSection.scss";
 import RemindersButton from "./RemindersButton";
 import { remindersColor } from "../../data";
+import { useState } from "react";
 export default function RemindersSection({
   mainText,
   subText,
@@ -9,7 +10,14 @@ export default function RemindersSection({
   ...props
 }) {
   return (
-    <div id="remindersBox" style={{ backgroundColor: mainColor }} {...props}>
+    <div
+      id="remindersBox"
+      style={{
+        backgroundColor: mainColor,
+        visibility: mainText || subText ? "visible" : "hidden",
+      }}
+      {...props}
+    >
       <div className="bordertext">
         <div className="heightReminders">
           <div className="box" style={{ backgroundColor: boxColor }}>

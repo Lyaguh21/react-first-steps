@@ -43,7 +43,7 @@ export default function DashBoardForm({ onSubmit }) {
           onChange={(e) => setSubtitle(e.target.value)}
           required
         />
-        <Button id="setOnDesk" type="submit" onClick={handleClick()}>
+        <Button id="setOnDesk" type="submit" onClick={handleClick}>
           Разместить на доске
         </Button>
       </form>
