@@ -25,7 +25,7 @@ export default function RemindersSection({
           <div className="box" style={{ backgroundColor: boxColor }}>
             {" "}
           </div>
-          <h1>{mainText}</h1>
+          <h1> {mainText}</h1>
           <h5>{subText}</h5>
         </div>
         <div className="deleteSection">

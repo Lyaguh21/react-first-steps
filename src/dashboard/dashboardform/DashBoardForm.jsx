@@ -25,7 +25,7 @@ export default function DashBoardForm({ onSubmit }) {
         </label>
         <input
           className="control"
-          maxLength="32"
+          maxLength="10"
           type="text"
           id="title"
           value={title}
@@ -43,7 +43,12 @@ export default function DashBoardForm({ onSubmit }) {
           onChange={(e) => setSubtitle(e.target.value)}
           required
         />
-        <Button id="setOnDesk" type="submit" onClick={handleClick}>
+        <Button
+          disabled={title.trim().length == 0}
+          id="setOnDesk"
+          type="submit"
+          onClick={handleClick}
+        >
           Разместить на доске
         </Button>
       </form>
