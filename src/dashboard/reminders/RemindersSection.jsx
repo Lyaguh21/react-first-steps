@@ -9,12 +9,14 @@ export default function RemindersSection({
   boxColor,
   ...props
 }) {
+  const [isVisible, setIsVisible] = useState(true);
+
   return (
     <div
       id="remindersBox"
       style={{
         backgroundColor: mainColor,
-        visibility: mainText || subText ? "visible" : "hidden",
+        display: (mainText || subText) && isVisible ? "block" : "none",
       }}
       {...props}
     >
@@ -27,7 +29,11 @@ export default function RemindersSection({
           <h5>{subText}</h5>
         </div>
         <div className="deleteSection">
-          <RemindersButton />
+          <RemindersButton
+            changeVisible={() => {
+              setIsVisible(false);
+            }}
+          />
         </div>
       </div>
     </div>
