@@ -1,16 +1,34 @@
+@import "../../colorAndFont";
 header {
-  height: 50px;
-  padding: 0 2rem;
-  padding-top: 0.8rem;
-  border-bottom: 1px solid #ccc;
-  background: #fafafa;
+  padding: 10px 2rem 10px 2rem;
+  border-bottom: 1px $borderSectionLight solid;
+  background: $backgroundHeaderLight;
 }
 .headerChildren {
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   max-width: 810px;
   margin: 0 auto;
+  text-align: center;
 }
-.timer {
-  margin-top: 10px;
+
+.switchbutton {
+  color: $fontWhiteColor;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+  font-size: 12px;
+  background-color: $mainColorSwitchButton;
+  padding: 0px 1px 0px 1px;
+  height: 45.58px;
+  width: 45.58px;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $hoverColorSwitchButton;
+  }
+  &:active {
+    background-color: $mainColorSwitchButton;
+  }
 }

@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
-$main-font: "M PLUS Rounded 1c", serif;
-
+@import "./colorAndFont";
+body {
+  background-color: $backgroundLightTheme;
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,12 +14,13 @@ main {
   max-width: 850px;
   margin: 0 auto;
   padding: 0rem 1rem 0 1rem;
+  background-color: $backgroundLightTheme;
 }
 section {
   ul {
     list-style: none;
     li {
-      border: 1px solid #ccc;
+      border: 1px solid $borderSectionLight;
       border-radius: 10px;
       padding: 1rem;
       margin-bottom: 1rem;
@@ -39,7 +41,7 @@ p {
 }
 
 .control {
-  border: 1px solid #ccc;
+  border: 1px solid $borderSectionLight;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   width: 100%;

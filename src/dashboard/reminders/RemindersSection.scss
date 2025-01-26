@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap");
-$remindersfont: "M PLUS Rounded 1c", serif;
-
+@import "../../_colorAndFont";
 * {
-  font-family: $remindersfont;
+  font-family: $main-font;
 }
 #remindersBox {
   height: 210px;

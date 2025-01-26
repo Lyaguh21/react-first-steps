@@ -1,4 +1,4 @@
-$deskСolor: linear-gradient(to top, #604a3c, #9d724f);
+@import "../../colorAndFont";
 
 #remindersTable {
   background: $deskСolor;
@@ -7,7 +7,7 @@ $deskСolor: linear-gradient(to top, #604a3c, #9d724f);
   margin-left: 1rem;
   border-collapse: separate;
   border-spacing: 15px 15px;
-  border: 3px black solid;
+  border: 3px $borderDeskColorLight solid;
   td {
     width: 210px;
     height: 210px;

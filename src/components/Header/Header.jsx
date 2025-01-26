@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import { styled } from "styled-components";
+
 import "./Header.scss";
 
-const HeaderContainer = styled.header`
-  height: 50px;
-  padding: 0 2rem;
-  padding-top: 0rem;
-  border-bottom: 1px solid #ccc;
-  background: #fafafa;
-`;
+// const HeaderContainer = styled.header`
+//   height: 50px;
+//   padding: 0 2rem;
+//   padding-top: 0rem;
+//   border-bottom: 1px solid #ccc;
+//   background: #fafafa;
+// `;
 export default function Header() {
   const [now, setNow] = useState(new Date());
 
@@ -21,12 +22,10 @@ export default function Header() {
   }, []);
 
   return (
-    <HeaderContainer>
+    <header>
       <div className="headerChildren">
-        <h1>NAME OF COMPANY</h1>
-
         <h3 className="timer">Время: {now.toLocaleTimeString()}</h3>
       </div>
-    </HeaderContainer>
+    </header>
   );
 }
