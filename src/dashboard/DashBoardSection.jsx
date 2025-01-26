@@ -34,7 +34,6 @@ export default function DashBoardSection() {
   };
   return (
     <section id="dashboardsection">
-      <h1 className="MainTitleBoard">Доска напоминаний</h1>
       <div>
         <div id="lsideForm">
           <DashBoardForm onSubmit={handleFormSubmit} />

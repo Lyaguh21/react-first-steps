@@ -10,17 +10,16 @@ import EffectSection from "./components/effect/EffectSection";
 import DashBoardSection from "./dashboard/DashBoardSection";
 
 export default function App() {
-  const [tab, setTab] = useState("main");
+  const [tab, setTab] = useState("dashboard");
   return (
     <>
       <Header />
       <main>
-        <IntroSection />
-
         <TabsSection active={tab} onChange={(current) => setTab(current)} />
 
         {tab == "main" && (
           <>
+            <IntroSection />
             <TeachingSection />
             <DifferencesSection />
             <SetColor />
