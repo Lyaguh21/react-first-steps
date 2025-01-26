@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { styled } from "styled-components";
-import logo from "/logo-name.svg";
 import "./Header.scss";
 
 const HeaderContainer = styled.header`

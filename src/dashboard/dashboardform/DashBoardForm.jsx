@@ -25,7 +25,7 @@ export default function DashBoardForm({ onSubmit }) {
         </label>
         <input
           className="control"
-          maxlength="32"
+          maxLength="32"
           type="text"
           id="title"
           value={title}
@@ -36,14 +36,14 @@ export default function DashBoardForm({ onSubmit }) {
         <label htmlFor="descriptionReminders">Введите подзаголовок</label>
         <input
           className="control"
-          maxlength="50"
+          maxLength="50"
           type="text"
           id="subtitle"
           value={subtitle}
           onChange={(e) => setSubtitle(e.target.value)}
           required
         />
-        <Button id="setOnDesk" type="submit" onClick={handleClick}>
+        <Button id="setOnDesk" type="submit" onClick={handleClick()}>
           Разместить на доске
         </Button>
       </form>
