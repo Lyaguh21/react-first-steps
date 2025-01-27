@@ -27,7 +27,7 @@ export default function TabsSection({ active, onChange }) {
         >
           Напоминания
         </Button>
-        <SwitchThemeButton switchTheme={{}} />
+        <SwitchThemeButton />
       </div>
     </section>
   );
